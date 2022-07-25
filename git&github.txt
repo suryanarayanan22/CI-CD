@@ -19,7 +19,9 @@ $git status
 To push from local sys to github, first you need to add to index from index you can commit. add all the files from local to index
 $git add test.txt (this will add in index)
 $git add -A (will add all the files from local)
-now to add to github
+now to add to github, first time it will ask username and email
+git config --global user.name "surya"
+git config --global user.email "sury@gmail.com"
 $git commit -m "first test"
 $git commit -a (all the files)
 to push all the folder evey time, you have to pull than only you have to push
