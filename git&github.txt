@@ -1,0 +1,24 @@
+Git is the local repository
+Github is the remote repository
+combaining all task is called continus integration
+Eg: working copy/Pc1==commit==local repostory == push ==Remote repostry ==pull == local repostory == update == working copy/Pc 2
+
+Create local folder and make this as git local repostry. how to make it as git local repository
+we need to navigate to tha folder using git and initialize the local repostory into git
+$git init
+To establish the connection with git and github
+$git remote add orgin "https://orginurl"
+only after commit the files will be available from local to git
+
+branch is folder(in github)
+we can pull the files from gitub to git
+$git pull orgin master (will pull all the files)
+
+git status will give what all the files are there in git
+$git status
+To push from local sys to github, first you need to add to index from index you can commit
+$git add test.txt (this will add in index)
+now to add to github
+$git commit -m "first test"
+
+
