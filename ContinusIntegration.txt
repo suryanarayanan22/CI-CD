@@ -1,1 +1,3 @@
 continus integration
+
+devops will create the build and they will run testers smoke testing or sanity testing code and check whether the build is stable
