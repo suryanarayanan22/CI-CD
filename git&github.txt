@@ -28,6 +28,26 @@ to push all the folder evey time, you have to pull than only you have to push
 $git pull orgin master 
 $git push orgin master
 
+install the git plugin in eclipse market place as Egit-git integration for eclipse
+Step 1:) create/clone the git repostory in eclipse
+  click on open perspective/search for git
+  if there is no repositry available than you have click on clone git repository and clone into view
+  than provide the url from github eg: https://github.com/suryanarayanan22/CI-CD.git
+  click next and than click next agin  and in directory field the location of git will be present(first git should be installed before this step)
+  click finish now we have created local git repostory for the project
+Step 2:) commit the code into git repository and push into github 
+      right click on the project and click on team and click on share project
+      select the repository name,browse the name from git repostory
+      right clikc on the project and click on team and click on commit(which will be available only in local git
+      Once the user click on commit than you see unstaged stages which means changes where not made in 
+      drag and drop from unstaged changes to staged changes 
+      click on commit, commit is mandatory 
+      than click on commit or commit and push (means code will be part of local directory and also in github repostory)
+      we can commit single file by clicking on that file and click on team and share project it goes on like that above
+      coz we have created the file and modified it will be defaulty it will show in staged changes we can directly commit instead of drag and drop
+
+Step 3:) pull from github to local repository
+     right click on the project and click on team and click on pull 
 
 
 
