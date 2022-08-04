@@ -7,6 +7,8 @@
 //6.refreshing the page== 
 //7. scrolling the page
 
+//agrument [0] == denotes the anonymous browser and argument[0] is refering to element (which means xpath or Weblement)
+
 JavascriptExecutor js = new ((javascriptExecutor)driver) // we are casting or cast the driver object into javascriptExecuotr
 public class js{
 public static void flash(WebElement element, Webdriver driver){
@@ -42,9 +44,40 @@ public static void flash(WebElement element, Webdriver driver){
      return title;
      
    }
+  //take screenshot
+  File src = ((TakeScreenshot)driver).getScreenshotAs(OutputeType.File);
+  File des = new File("C://Downloads/text.png");
+  FileUtils.copyFile(src,des);
+  
+  //cick using javascript
+
+   public static void click(WebElement element, WedDriver driver){
      
-   
-   
+     JavascriptExecutor js = new((JavascriptExecutor)drive);
+     js.executeScript("argument[0].click();",element)
+    
+     
+   }
+  
+  //generate alert
+  public static void genrateAlert(WebElement element, String tring){
+   JavascriptExecutor js = new((JavascriptExecutor)drive);
+     js.executeScript("alert("+tring+"));
+     js.executeScript("history.go(0);//refresh the page
+    
+     
+   }
+   //scroll the web page till the element
+    public static void ScollIntoView(WebElement element, Webdriver driver){
+   JavascriptExecutor js = new((JavascriptExecutor)drive);
+     js.executeScript("argument[0].scrollIntoView(true)",element);
+    }
+                      
+    //scroll the web page till end
+      public static void ScollToDown(Webdriver driver){
+   JavascriptExecutor js = new((JavascriptExecutor)drive);
+     js.executeScript("argument[0].scrollTo(0,document.body.ScrollHight)");
+    }         
     
 
 }
