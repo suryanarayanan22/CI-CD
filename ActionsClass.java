@@ -20,4 +20,7 @@ act.movetoElement(usermanagment).perform(); //it will move the mouse to the spec
 act.movetoElement(user).click().perform(); // it will mouseover and click the the element
 //instant of above three codes we can also right like this
 act.movetoElement(admin).movetoElement(userman).movetoElement(user).perform();
-22.mins till
+movetoElement() ==> mouseover
+contextclick() ==> rightclick
+
+22 mins
