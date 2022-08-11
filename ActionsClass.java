@@ -23,4 +23,33 @@ act.movetoElement(admin).movetoElement(userman).movetoElement(user).perform();
 movetoElement() ==> mouseover
 contextclick() ==> rightclick
 
-22 mins
+//right click
+
+Action act = new Action(driver);
+WebElement element =driver.findelement(By.xpath("");
+act.contextClick(element).perform();
+driver.findelement(By.xpath("")).click(); //click on copy element
+ driver.switchTo().alert().getText(); //get text in alret
+driver.switchTo().alert().accept();  // click on ok button in alert
+                                       
+//drap and drop
+
+ Action act = new Action(driver);
+WebElement sourceElement =driver.findelement(By.xpath("");  
+WebElement TargetElement =driver.findelement(By.xpath("");   
+ act.clickonHold(sourceElement).moveToElement(targetElement).release().perform(); //this is formal way
+ act.dragAndDrop(source,target).perform(); //this is shortcut way
+                                             
+ //slider
+ driver.switchTo().frame(0);
+ Action act = new Action(driver);
+  WebElement slider =driver.findelement(By.xpath("");                                             
+ act.moveToElemnent(slider).dragandDropBy(slider,300,0).perform();
+                                        
+                                        
+                                             
+                                             
+                                       
+                                       
+                                       
+                   
