@@ -47,6 +47,7 @@ WebElement TargetElement =driver.findelement(By.xpath("");
  act.moveToElemnent(slider).dragandDropBy(slider,300,0).perform();
                                         
                                         
+                                        
                                              
                                              
                                        
