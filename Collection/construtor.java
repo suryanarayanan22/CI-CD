@@ -19,3 +19,25 @@ public class TC_ODR_008 extends ApplicationKeywords {
 }
 
 //for every object constructor will be executed if you create 10 object it will execute 10times
+//default == which is accessable only with in same package
+//protected == which is accessable within the same package, but outside only in the child class
+//Rules of constructor 
+1.return type is not available in constractor, if you give return type as void it will take as method
+2. the modifiers only allowed in constrcutor are public , default, private, prodtucted
+
+//default constructor
+
+//if you dont add constructor in class compiler will add constructor for us that is called as default constructor
+//default constructor is always NO arg constructor -- means inside the () there will be no value
+//even if we write the constructor with with no arg constrcutor it is not default constructor
+// access modifier of default constructor is same as class modifier, this rule is applicable only for public and default coz top level class cant be private and protectued 
+// default constructor only one line of code that is super(); means no argument call to parent constructor
+//the first line of code should be eithre super(); or this(); keywoard
+//this(); mans calling current class cosntrucotr
+
+
+//case study of super
+
+1. call to constructor must be in first statement menas super(); or this(); must be in first line of construtor
+2. you can use only super(); and this(); must be in constructor, out side of constructor we cant use we will get error
+
